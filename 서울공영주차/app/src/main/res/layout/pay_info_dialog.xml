@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="350dp"
+    android:orientation="vertical"
+    android:id="@+id/pay_main_view"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:paddingRight="6dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pay_dg_title"
+            android:layout_width="0dp"
+            android:layout_weight="90"
+            android:layout_height="match_parent"
+            android:text="   요금 정보"
+            android:textStyle="bold"
+            android:gravity="center|left"
+            android:textSize="19dp"
+            android:textColor="#000" />
+
+        <ImageView
+            android:id="@+id/content_pay_close"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:padding="5dp"
+            android:layout_marginRight="2dp"
+            android:clickable="true"
+            android:src="@drawable/close_grey" />
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#AAAAAA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16.5"
+        android:id="@+id/pay_dg1"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="match_parent"
+            android:src="@drawable/coin"
+            android:padding="17dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/pay_dg_text1"
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textSize="14dp"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAAAAA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20.5"
+        android:id="@+id/add_hour_pay_main"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="match_parent"
+            android:src="@drawable/hour_pay"
+            android:padding="18dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/add_hour_pay"
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textSize="14dp"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAAAAA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16.5"
+        android:id="@+id/pay_dg3"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="match_parent"
+            android:src="@drawable/day_pay"
+            android:padding="18dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/pay_dg_text2"
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textSize="14dp"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAAAAA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16.5"
+        android:id="@+id/pay_dg4"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="match_parent"
+            android:src="@drawable/week_pay"
+            android:padding="18dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/pay_dg_text3"
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textSize="14dp"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:id="@+id/pay_dg5"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pay_dg_text4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textSize="9.5dp"
+            android:text="공공데이터를 기반으로 보여주는 정보로 실제와 다를 수 있습니다.\n잘못된 정보는 신고 아이콘을 눌러 보내주시면 검토하도록 하겠습니다."
+            android:textColor="#AAAAAA" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">서울공영주차</string>
+    <string name="str_done">완료</string>
+
+    <string name="rationale_title">권한이 필요합니다</string>
+    <string name="rationale_message">사용자의 위치를 사용하기 위한 권한이 필요합니다</string>
+    <string name="check_version">1.00</string>
+</resources>

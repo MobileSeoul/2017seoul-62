@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:id="@+id/paking_add"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:paddingRight="6dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_weight="10"
+            android:src="@drawable/parking_add" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:layout_height="match_parent"
+            android:text="주차장 추가하기"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/content_pay_close"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:padding="4dp"
+            android:clickable="true"
+            android:src="@drawable/close_grey" />
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#AAAAAA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="83"
+        android:id="@+id/pay_dg1"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/parking_add_memo"
+            android:layout_width="match_parent"
+            android:layout_weight="90"
+            android:layout_height="0dp"
+            android:textColor="#BDBDBD"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:text="이곳에 추가할 정보를 입력하세요.\n\n(주차장명 / 주차장종류 : 공용,일반)"
+            android:background ="@null"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/parking_add_confirm"
+            android:layout_width="match_parent"
+            android:layout_weight="10"
+            android:layout_height="0dp"
+            android:textColor="#0000FF"
+            android:layout_marginBottom="5dp"
+            android:text="추가 요청하기"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

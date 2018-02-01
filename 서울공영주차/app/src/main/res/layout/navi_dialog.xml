@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="350dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:paddingRight="6dp"
+    android:id="@+id/navi_main_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:id="@+id/navi_dg_title"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/navi_dg_title_text"
+            android:layout_width="0dp"
+            android:layout_weight="90"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:text="   내비게이션을 선택하세요"
+            android:textColor="#000" />
+
+        <ImageView
+            android:id="@+id/content_navi_close"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:clickable="true"
+            android:src="@drawable/close_grey" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAAAAA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_marginLeft="-15dp"
+        android:id="@+id/navi_dg1"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="match_parent"
+            android:src="@drawable/navermap"
+            android:padding="15dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/navi_dg_text1"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginLeft="5dp"
+            android:textSize="16.5dp"
+            android:text="현재위치로 길찾기"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAAAAA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_marginLeft="-15dp"
+        android:id="@+id/navi_dg2"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="match_parent"
+            android:src="@drawable/tmap"
+            android:padding="15dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/navi_dg_text2"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginLeft="5dp"
+            android:text="티맵"
+            android:textSize="16.5dp"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAAAAA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_marginLeft="-15dp"
+        android:id="@+id/navi_dg3"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="match_parent"
+            android:src="@drawable/kakaonavi"
+            android:padding="15dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/navi_dg_text3"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginLeft="5dp"
+            android:text="카카오내비"
+            android:textSize="16.5dp"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAAAAA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_marginLeft="-15dp"
+        android:id="@+id/navi_dg4"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="match_parent"
+            android:src="@drawable/copy"
+            android:padding="15dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/navi_dg_text4"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginLeft="5dp"
+            android:text="도착지 주소 복사"
+            android:textSize="16.5dp"
+            android:textColor="#000" />
+    </LinearLayout>
+
+</LinearLayout>

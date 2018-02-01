@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainLayout">
+
+    <EditText
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:paddingLeft="15dp"
+        android:text="목적지나 지역명 검색"
+        android:textColor="#BDBDBD"
+        android:textSize="17dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:background="@drawable/search_window"
+        android:focusableInTouchMode="false" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90">
+
+        <com.nhn.android.maps.NMapView
+            android:id="@+id/mapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ImageButton
+            android:id="@+id/user_loc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/circle_frame"
+            android:scaleType="fitXY"
+            android:src="@drawable/here_icon" />
+
+        <ImageButton
+            android:id="@+id/user_move"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/user_loc"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/circle_frame"
+            android:scaleType="fitXY"
+            android:src="@drawable/navi" />
+
+        <ImageButton
+            android:id="@+id/map_sizeminus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="8dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/circle_clear_frame"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/minus" />
+
+        <ImageButton
+            android:id="@+id/map_sizeplus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_clear_frame"
+            android:scaleType="fitXY"
+            android:src="@drawable/plus"
+            android:layout_above="@+id/map_sizeminus"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true" />
+
+
+        <ImageView
+            android:id="@+id/park_guide_view"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:src="@drawable/tutorial" />
+
+
+        <ImageButton
+            android:id="@+id/user_parking_guide"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="28dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/circle_frame"
+            android:src="@drawable/guide"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp" />
+
+        <ImageButton
+            android:id="@+id/user_parking_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/user_loc"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/circle_frame"
+            android:src="@drawable/add_parking"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp" />
+
+        <ImageButton
+            android:id="@+id/user_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/add_here"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:layout_centerVertical="true" />
+
+
+        <!--
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true">
+
+        </RelativeLayout>
+-->
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="160dip"
+            android:layout_alignParentBottom="true"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/upper_shadow_todo"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="22"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/content_code"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone"
+                    android:textSize="0dp" />
+
+                <TextView
+                    android:id="@+id/content_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="90"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <ImageButton
+                    android:id="@+id/content_report"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:layout_marginTop="-3dp"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="10"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/report" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="25"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/content_addr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="65"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#7D7D7D"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/content_distance"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="35"
+                    android:gravity="right"
+                    android:textColor="#7D7D7D"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="25"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/content_tel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="40"
+                    android:autoLink="phone"
+                    android:textAllCaps="true"
+                    android:textColor="#0000FF"
+                    android:textIsSelectable="false"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/content_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="60"
+                    android:gravity="right"
+                    android:textColor="#7D7D7D"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content_4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="28"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/content_pay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:scaleType="fitXY"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_pay_push"
+                    android:textColor="#ffffff"
+                    android:layout_weight="50" />
+
+                <ImageButton
+                    android:id="@+id/content_navi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/button_navi_push"
+                    android:textColor="#ffffff"
+                    android:layout_weight="50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+
+
